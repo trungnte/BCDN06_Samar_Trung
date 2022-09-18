@@ -11,21 +11,29 @@ html, body {
   line-height: 1.6;
 }
 
+.container {
+  max-width: 1199px;
+  margin: auto;
+}
+
+
 /* --------------------------------- */
 /* HEADER */
 header{
   background: transparent;
+  /* FIXME: position: absolute; làm mất kích thước width và height mặc định */
+  /*        thẻ con absolute không có thẻ cha nào relative thì tự theo body */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* z-index: 1; */
 }
 
 .header__content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-
-  margin: auto;
-  width: 80%;
-  /* max-width: 1200px; */
 }
 
 .header__content ul{
@@ -36,6 +44,8 @@ header{
 .header__content a{
   /* delete underline */
   text-decoration: none;
+
+  text-transform: capitalize;
 
   /* font, size,.. */
   font-size: 15px;
@@ -91,6 +101,7 @@ header{
   font-size: 15px;
   font-weight: 500;
   line-height: 1.2;
+  text-transform: uppercase;
 
   cursor: pointer;
 
@@ -102,6 +113,162 @@ header{
   background-position: right center;
 }
 
+
+/*----------------------------------------------------------------------- */
+/* CAROUSEL */
+.samarCarousel {
+  padding-top: 180px;
+  overflow: hidden;
+  background-image: url(../img/pic2.png);
+  background-position: top;
+  background-size: 100%;
+}
+
+.samarCarousel__content {
+  display: flex;
+  align-items: center;
+}
+
+.samarCarousel__left {
+  width: 60%;
+}
+
+.samarCarousel__right {
+  width: 40%;
+}
+
+.samarCarousel__title p {
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #f55f8d;
+}
+
+.samarCarousel__title h2 {
+  font-size: 70px;
+  line-height: 1.1;
+  font-weight: 800;
+  color: #262626;
+  margin-bottom: 20px;
+}
+
+.samarCarousel__article p {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.samarCarousel__article li {
+  list-style: none;
+  padding: 10px 5px 10px 0;
+  font-size: 20px;
+}
+
+.samarCarousel__banner {
+  width: 570px;
+  margin-left: 50px;
+}
+.samarCarousel__banner img {
+  max-width: 100%;
+  display: block;
+}
+.samarCarousel__article ul {
+  margin-bottom: 20px;
+}
+
+.samarCarousel__article i {
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  border-radius: 35px;
+  font-weight: 900;
+  background-image: linear-gradient(to right, #f55f8d 0,#f8ae56 51%,#f55f8d 100%);
+  background-size: 200%;
+  margin-right: 10px;
+}
+
+/*----------------------------------------------------------------------- */
+/* SERVICES */
+.services {
+  padding-bottom: 0;
+  background-image: url(../img/bg2.png);
+  background-size: cover;
+  background-position: top center;
+  text-align: center;
+}
+
+.services__title p {
+  font-weight: 600;
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #f55f8d;
+}
+
+.services__title h2 {
+  font-weight: 900;
+  font-size: 70px;
+  margin-bottom: 20px;
+  color: #262626;
+}
+
+.services__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+
+/* Truoc hover */
+.services__item {
+  border-radius: 0.5rem;
+  background: white;
+  box-shadow: 0 0 60px 0 rgb(0 0 0 / 10%);
+  padding: 30px 45px;
+  transform: translateY(0);
+  transition: all .5s;
+}
+/* Sau hover */
+.services__item:hover {
+  transform: translateY(-20px);
+}
+
+.services__item img{
+  width: 215px;
+}
+
+.services__item h3 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #262626;
+  margin: 15px 0;
+}
+
+/*----------------------------------------------------------------------- */
+/* ABOUT */
+
+/*----------------------------------------------------------------------- */
+/* NUMBER */
+
+/*----------------------------------------------------------------------- */
+/* FEATURES */
+
+/*----------------------------------------------------------------------- */
+/* PORTFOLIO */
+
+/*----------------------------------------------------------------------- */
+/* PLAN */
+
+
+/*----------------------------------------------------------------------- */
+/* TESTIMONIAL */
+
+/*----------------------------------------------------------------------- */
+/* BLOG */
+
+/*----------------------------------------------------------------------- */
+/* FOOTER */
 
 /* Animation */
 @keyframes upToDown {
