@@ -21,6 +21,13 @@ html, body {
 /* HEADER */
 header{
   background: transparent;
+  /* FIXME: position: absolute; làm mất kích thước width và height mặc định */
+  /*        thẻ con absolute không có thẻ cha nào relative thì tự theo body */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
 }
 
 .header__content {
