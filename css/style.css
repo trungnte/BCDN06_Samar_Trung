@@ -11,6 +11,12 @@ html, body {
   line-height: 1.6;
 }
 
+.container {
+  max-width: 1199px;
+  margin: auto;
+}
+
+
 /* --------------------------------- */
 /* HEADER */
 header{
@@ -21,11 +27,6 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-
-  margin: auto;
-  width: 80%;
-  /* max-width: 1200px; */
 }
 
 .header__content ul{
@@ -103,6 +104,82 @@ header{
 
 .btn__gradient:hover{
   background-position: right center;
+}
+
+
+/* ------------------------------------------------------------------------- */
+/* CAROUSEL */
+.samarCarousel {
+  padding-top: 180px;
+  overflow: hidden;
+  background-image: url(../img/pic2.png);
+  background-position: top;
+  background-size: 100%;
+}
+
+.samarCarousel__content {
+  display: flex;
+  align-items: center;
+}
+
+.samarCarousel__left {
+  width: 60%;
+}
+
+.samarCarousel__right {
+  width: 40%;
+}
+
+.samarCarousel__title p {
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #f55f8d;
+}
+
+.samarCarousel__title h2 {
+  font-size: 70px;
+  line-height: 1.1;
+  font-weight: 800;
+  color: #262626;
+  margin-bottom: 20px;
+}
+
+.samarCarousel__article p {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.samarCarousel__article li {
+  list-style: none;
+  padding: 10px 5px 10px 0;
+  font-size: 20px;
+}
+
+.samarCarousel__banner {
+  width: 570px;
+  margin-left: 50px;
+}
+.samarCarousel__banner img {
+  max-width: 100%;
+  display: block;
+}
+.samarCarousel__article ul {
+  margin-bottom: 20px;
+}
+
+.samarCarousel__article i {
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  border-radius: 35px;
+  font-weight: 900;
+  background-image: linear-gradient(to right, #f55f8d 0,#f8ae56 51%,#f55f8d 100%);
+  background-size: 200%;
+  margin-right: 10px;
 }
 
 

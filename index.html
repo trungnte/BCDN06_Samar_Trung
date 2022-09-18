@@ -10,11 +10,16 @@
   <!-- GOOGLE FONT ROBOTO -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
 
   <!-- FONT AWESOME -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+  <!-- LINE AWESOME -->
+  <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+  <!-- FLATICON -->
+  <link rel="stylesheet" href="./css/flaticon/flaticon.css">
 
   <!-- MAIN CSS -->
   <link rel="stylesheet" href="./css/style.css">
@@ -22,54 +27,96 @@
 
 <body>
   <header>
-    <div class="header__content">
-      <!-- logo -->
-      <a href="#">
-        <img src="./img/logo-2.png" alt="logo">
-      </a>
-      
-      <!-- Menu -->
-      <nav>
-        <ul>
-          <li>
-            <a href="#">
-              <span>Home</span>
+    <div class="container">
+      <div class="header__content">
+        <!-- logo -->
+        <a href="#">
+          <img src="./img/logo-2.png" alt="logo">
+        </a>
+        
+        <!-- Menu -->
+        <nav>
+          <ul>
+            <li>
+              <a href="#">
+                <span>Home</span>
+                <i class="fa-solid fa-chevron-down"></i>
+              </a>
+            </li>
+            <li><a href="#">
+              <span>Pages</span>
               <i class="fa-solid fa-chevron-down"></i>
-            </a>
-          </li>
-          <li><a href="#">
-            <span>Pages</span>
-            <i class="fa-solid fa-chevron-down"></i>
-          </a></li>
-          <li><a href="#">
-            <span>Services</span>
-            <i class="fa-solid fa-chevron-down"></i>
-          </a></li>
-          <li><a href="#">
-            <span>Post Layout</span>
-            <i class="fa-solid fa-chevron-down"></i>
-          </a></li>
-          <li><a href="#">
-            <span>Blog</span>
-            <i class="fa-solid fa-chevron-down"></i>
-          </a></li>
-          <li><a href="#">
-            <span>Contact Us</span>
-            <i class="fa-solid fa-chevron-down"></i>
-          </a></li>
-        </ul>
-
-        <!-- button "GET A QUOTE" -->
-        <div>
-          <button class="btn__gradient">GET A QUOTE</button>
-        </div>
-      </nav>
-
+            </a></li>
+            <li><a href="#">
+              <span>Services</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </a></li>
+            <li><a href="#">
+              <span>Post Layout</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </a></li>
+            <li><a href="#">
+              <span>Blog</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </a></li>
+            <li><a href="#">
+              <span>Contact Us</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </a></li>
+          </ul>
+  
+          <!-- button "GET A QUOTE" -->
+          <div>
+            <button class="btn__gradient">GET A QUOTE</button>
+          </div>
+        </nav>
+  
+      </div>
     </div>
   </header>
 
   <!-- layout -->
-  <section class="samarCarousel"></section>
+  <section class="samarCarousel">
+    <div class="container">
+      <div class="samarCarousel__content">
+
+        <div class="samarCarousel__left">
+          <div class="samarCarousel__title">
+            <p>We are The Best</p>
+            <h2>Freelance Product Designer Running</h2>
+          </div>
+          <div class="samarCarousel__article">
+            <p>
+              We develop the relationships that underpin the next phase in your
+              <br>
+              organisation’s growth.
+            </p>
+            <ul>
+              <li>
+                <!-- <i class="fa-solid fa-check"></i> -->
+                <i class="las la-check"></i>
+                Master's degree in designing
+              </li>
+              <li>
+                <!-- <i class="fa-solid fa-check"></i> -->
+                <i class="las la-check"></i>
+                Outstanding mobile design
+              </li>
+            </ul>
+            <button class="btn__gradient">get started</button>
+          </div>
+  
+        </div>
+  
+        <div class="samarCarousel__right">
+          <div class="samarCarousel__banner">
+            <img src="./img/pic3_1.png" alt="carousel banner">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- --------------------------------- -->
   <section class="services"></section>
   <!-- --------------------------------- -->
