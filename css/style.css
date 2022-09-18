@@ -27,7 +27,7 @@ header{
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1;
+  /* z-index: 1; */
 }
 
 .header__content {
@@ -114,7 +114,7 @@ header{
 }
 
 
-/* ------------------------------------------------------------------------- */
+/*----------------------------------------------------------------------- */
 /* CAROUSEL */
 .samarCarousel {
   padding-top: 180px;
@@ -189,6 +189,86 @@ header{
   margin-right: 10px;
 }
 
+/*----------------------------------------------------------------------- */
+/* SERVICES */
+.services {
+  padding-bottom: 0;
+  background-image: url(../img/bg2.png);
+  background-size: cover;
+  background-position: top center;
+  text-align: center;
+}
+
+.services__title p {
+  font-weight: 600;
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #f55f8d;
+}
+
+.services__title h2 {
+  font-weight: 900;
+  font-size: 70px;
+  margin-bottom: 20px;
+  color: #262626;
+}
+
+.services__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+
+/* Truoc hover */
+.services__item {
+  border-radius: 0.5rem;
+  background: white;
+  box-shadow: 0 0 60px 0 rgb(0 0 0 / 10%);
+  padding: 30px 45px;
+  transform: translateY(0);
+  transition: all .5s;
+}
+/* Sau hover */
+.services__item:hover {
+  transform: translateY(-20px);
+}
+
+.services__item img{
+  width: 215px;
+}
+
+.services__item h3 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #262626;
+  margin: 15px 0;
+}
+
+/*----------------------------------------------------------------------- */
+/* ABOUT */
+
+/*----------------------------------------------------------------------- */
+/* NUMBER */
+
+/*----------------------------------------------------------------------- */
+/* FEATURES */
+
+/*----------------------------------------------------------------------- */
+/* PORTFOLIO */
+
+/*----------------------------------------------------------------------- */
+/* PLAN */
+
+
+/*----------------------------------------------------------------------- */
+/* TESTIMONIAL */
+
+/*----------------------------------------------------------------------- */
+/* BLOG */
+
+/*----------------------------------------------------------------------- */
+/* FOOTER */
 
 /* Animation */
 @keyframes upToDown {
