@@ -6,6 +6,9 @@
 
 html, body {
   font-family: 'Roboto', sans-serif;
+  color: #636363;
+  font-weight: 400;
+  line-height: 1.6;
 }
 
 /* --------------------------------- */
@@ -33,7 +36,28 @@ header{
 .header__content a{
   /* delete underline */
   text-decoration: none;
+
+  /* font, size,.. */
+  font-size: 15px;
+  font-weight: 500;
+  color: #070120
 }
+
+
+.header__content a span {
+  /* Why animation work within display: inline-block? */
+  display: inline-block;
+  transition: all 1s;
+}
+
+.header__content a:hover{
+  color: #f55f8d;
+}
+
+.header__content a:hover span{
+  animation: upToDown 0.3s;
+}
+
 
 .header__content li{
   display: inline-block;
@@ -76,4 +100,19 @@ header{
 
 .btn__gradient:hover{
   background-position: right center;
+}
+
+
+/* Animation */
+@keyframes upToDown {
+  49% {
+    transform: translateY(100%);
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  51% {
+    opacity: 1;
+  }
 }
