@@ -16,6 +16,9 @@ html, body {
   margin: auto;
 }
 
+.section__inner {
+  padding-top: 115px;
+}
 
 /* --------------------------------- */
 /* HEADER */
@@ -247,6 +250,72 @@ header{
 
 /*----------------------------------------------------------------------- */
 /* ABOUT */
+.about {
+  background-image: url(../img/bg15.png);
+  background-size: 100%;
+  background-position: center right;
+  background-repeat: no-repeat;
+  padding-bottom: 85px;
+  overflow: hidden;
+}
+
+.about__content {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+
+.about__left {
+  width: 60%;
+  position: absolute;
+  left: -17%;
+}
+
+.about__right{
+  width: 50%;
+}
+
+
+.about__left img {
+  width: 100%;
+  border-radius: 0 100px 100px 0;
+}
+
+
+
+.about__right p {
+  margin-bottom: 15px;
+}
+
+.about__title p {
+  font-weight: 600;
+  font-size: 22px;
+  color: #f55f8d;
+}
+
+.about__title h2 {
+  font-size: 70px;
+  line-height: 1.1;
+  font-weight: 900;
+  color: #262626;
+  margin-bottom: 20px;
+}
+
+.about__right ul {
+  margin-bottom: 30px;
+}
+
+.about__right li {
+  list-style: none;
+}
+
+.about__right i {
+  font-size: 24px;
+  color: #f55f8d;
+  margin-right: 10px;
+  vertical-align: middle;
+}
 
 /*----------------------------------------------------------------------- */
 /* NUMBER */
