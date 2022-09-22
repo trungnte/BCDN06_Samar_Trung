@@ -319,6 +319,47 @@ header{
 
 /*----------------------------------------------------------------------- */
 /* NUMBER */
+.number {
+  background-image: url(../img/bg14.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 80px 50px;
+  text-align: center;
+}
+
+.number__content {
+  display: flex;
+  justify-content: space-around;
+}
+.number__item {
+  width: 25%;
+}
+
+.number__item i {
+  font-size: 45px;
+  background-image: linear-gradient(to right, #f55f8d 0,#f8ae56 51%,#f55f8d 100%);
+  background-size: 200%;
+  color: #fff;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  display: inline-block;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.number__item p:first-of-type {
+  font-size: 65px;
+  font-weight: 800;
+  color: #f55f8d;
+  line-height: 1;
+}
+
+.number__item p:last-of-type {
+  color: #262626;
+  font-size: 18px;
+}
+
 
 /*----------------------------------------------------------------------- */
 /* FEATURES */
