@@ -5,6 +5,10 @@ Guideline: https://tinyurl.com/2p9duzm8
 
 ## Release
 
+Version 0.3.0:
+
+    - Portfolio
+
 Version 0.2.0:
 
     - About
