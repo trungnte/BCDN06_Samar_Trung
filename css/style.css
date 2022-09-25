@@ -890,9 +890,71 @@ header{
 
 /*----------------------------------------------------------------------- */
 /* BLOG */
+.blog {
+  background-image: url(../img/bg16.png);
+  background-position: top center;
+  background-size: cover;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.blog__title p {
+  font-weight: 600;
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #f55f8d;
+}
+
+.blog__title h2 {
+  font-weight: 800;
+  font-size: 70px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  color: #262626
+}
 
 /*----------------------------------------------------------------------- */
 /* FOOTER */
+
+
+.backToTop {
+  display: block;
+  width: 50px;
+  height: 50px;
+
+  text-align: center;
+  line-height: 50px;
+
+  border-radius: 8px;
+  background-color: #f55f8d;
+  color: white;
+
+  /* di theo body */
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+
+
+
+  /* An nut */
+  opacity: 0;
+  visibility: hidden;
+
+  transition: all .2s;
+
+  box-shadow: -4px 4px 24px -10px #f55f8d;;
+
+}
+
+
+/* // back-to-top button visible */
+.cd-top--is-visible { 
+  visibility: visible;
+  opacity: 1;
+}
+
+
+
 
 /* Animation */
 @keyframes upToDown {
