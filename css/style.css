@@ -833,11 +833,6 @@ header{
   opacity: 0;
 }
 
-
-
-
-
-
 .testimonial-text {
   padding: 30px;
   text-align: center;
@@ -878,6 +873,19 @@ header{
 .testimonial-position {
   color: #f55f8d;
   margin-bottom: 20px;
+}
+
+.swiper-pagination-bullet-active {
+  background: #f55f8d;
+}
+
+.swiper-container {
+  position: relative;
+}
+
+/* Force override :D */
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+  bottom: -8px;
 }
 
 /*----------------------------------------------------------------------- */
